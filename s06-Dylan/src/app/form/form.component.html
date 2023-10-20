@@ -1,5 +1,17 @@
 <div class="form-container">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" [(ngModel)]="formData.nombre" id="nombre" name="Nombre" required>
+        </mat-form-field>
 
+        <mat-form-field class="example-full-width">
+            <mat-label>Comentario</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." [(ngModel)]="formData.comentario" name="comentario"
+                id="comentario"></textarea>
+        </mat-form-field>
+        <button type="submit" (click)="onSubmit()">Enviar</button>
+        <button type="submit" (click)="onReset()">Limpiar</button>
 
-
+    </form>
 </div>
