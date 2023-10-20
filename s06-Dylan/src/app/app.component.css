@@ -1,1 +1,4 @@
-.tool-bar {}
+.nav-link {
+    color: white !important;
+    margin: 20px;
+}
