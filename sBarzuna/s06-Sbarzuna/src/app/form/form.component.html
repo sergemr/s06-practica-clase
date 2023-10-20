@@ -1,0 +1,25 @@
+<div class="form-container">
+    <form #form="ngForm" ngNativeValidate>
+            <mat-form-field class="form">
+              <mat-label>Nombre</mat-label>
+                <input matInput 
+                placeholder="Ex. Anthon" 
+                [(ngModel)]= "formData.nombre"
+                name="nombre" 
+                id="nombre" 
+                required>
+            </mat-form-field>
+        <br>
+            <mat-form-field class="form">
+                <mat-label>Comentario</mat-label>
+                <input matInput 
+                placeholder="Ex."
+                [(ngModel)]= "formData.comentario"
+                name="comentario"
+                id="comentario"
+                >
+            </mat-form-field>
+        <br>
+        <button type="submit" (click)="onSubmit()">Enviar</button>
+    </form>
+</div>
