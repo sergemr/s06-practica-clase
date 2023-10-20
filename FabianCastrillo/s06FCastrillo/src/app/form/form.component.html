@@ -1,0 +1,25 @@
+<div class="form-container">
+    
+    <form #form="ngForm" ngNativeValidate>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input 
+            matInput name="nombre" placeholder="Nombre" value=''
+             [(ngModel)]="formdata.nombre">
+
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Comentario</mat-label>
+            <textarea matInput name="comentario" placeholder="Comentario" [(ngModel)]="formdata.comentario"></textarea>
+
+          </mat-form-field>
+          <br>
+          <br>
+          <input type="submit" (click)="onSubmit()" placeholder="Submit" name="Ingresar" id="Submit">
+          <input type="reset" (click)="onReset()" placeholder="Reset" name="Reset" id="Reset">
+    </form>
+</div>
