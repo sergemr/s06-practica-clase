@@ -1,0 +1,7 @@
+.nav-link{
+    color: white;
+}
+.nav-link:a {
+    color: white;
+    margin: 20px;
+}
