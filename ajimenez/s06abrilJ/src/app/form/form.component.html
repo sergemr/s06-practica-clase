@@ -1,0 +1,32 @@
+<div class="form-container">
+    <form #form="ngForm" ngNativeValidation>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Favorite food</mat-label>
+            <input matInput placeholder="Nombre"
+            [(ngModel)]="formData.nombre" 
+            id="nombre" 
+            value="" 
+            required>
+          </mat-form-field>
+
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Comentario</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." 
+            [(ngModel)]="formData.comentario"
+            name="comentario" 
+            id="comentario">
+        </textarea>
+        </mat-form-field>
+
+        <button type="submit" (click)="onSummit()">Enviar</button>
+        <button type="reset" (click)="onReset()">Enviar</button>
+
+    </form>
+
+
+</div>
+<div>
+    
+</div>
